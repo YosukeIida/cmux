@@ -392,6 +392,13 @@ extension RemoteTmuxControlConnection {
         return sendInternal("send-keys -t %\(paneId) -H \(hex)", kind: .other)
     }
 
+    /// Sends a physical named key and lets tmux encode it for the target pane's
+    /// advertised terminal and live input modes.
+    @discardableResult
+    func sendKey(paneId: Int, key: RemoteTmuxKeyName) -> Bool {
+        sendInternal("send-keys -t %\(paneId) \(key.value)", kind: .other)
+    }
+
     nonisolated static func hexByteArguments(_ data: Data) -> String {
         guard !data.isEmpty else { return "" }
         let digits = Array("0123456789abcdef".utf8)
