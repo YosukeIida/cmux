@@ -206,7 +206,10 @@ await measure("completion", () => handlers.get("agent_end")({
 const logPath = process.env.CMUX_TEST_PI_UI_LATENCY_LOG;
 const deadline = performance.now() + 5000;
 while (performance.now() < deadline) {
-  const text = await Bun.file(logPath).text();
+  let text = "";
+  try {
+    text = await Bun.file(logPath).text();
+  } catch (_) {}
   const completed = text.split("\\n").filter((line) => line.startsWith("end ")).length;
   if (completed >= 6) break;
   await new Promise((resolve) => setTimeout(resolve, 10));
@@ -250,8 +253,23 @@ while (performance.now() < deadline) {
         "hooks pi notification",
         "hooks pi stop",
     )
-    if len(completed) != len(expected) or any(
-        command not in line for command, line in zip(expected, completed)
+    indexes = {
+        command: [index for index, line in enumerate(completed) if command in line]
+        for command in expected
+    }
+    if (
+        len(completed) != len(expected)
+        or any(len(found) != 1 for found in indexes.values())
+        or not (
+            indexes["hooks pi session-start"][0]
+            < indexes["hooks pi prompt-submit"][0]
+            < indexes["hooks pi notification"][0]
+            < indexes["hooks pi stop"][0]
+        )
+        or not (
+            indexes["--json surface resume set"][0]
+            < indexes["--json surface resume get"][0]
+        )
     ):
         print(f"FAIL: detached Pi lifecycle work lost command ordering: {calls!r}")
         return 1
@@ -1211,7 +1229,14 @@ for (let index = 0; index < 4; index += 1) {
   }, ctx);
 }
 const logPath = process.env.CMUX_TEST_PI_CANCELLATION_LOG;
-while (!(await Bun.file(logPath).text()).includes("hooks feed")) {
+async function readLog() {
+  try {
+    return await Bun.file(logPath).text();
+  } catch (_) {
+    return "";
+  }
+}
+while (!(await readLog()).includes("hooks feed")) {
   await new Promise((resolve) => setTimeout(resolve, 10));
 }
 for (const index of [3, 1, 2, 0]) {
@@ -1231,7 +1256,11 @@ handlers.get("tool_execution_end")({
   toolName: "bash",
   result: { content: [{ type: "text", text: "late" }] }
 }, ctx);
-await new Promise((resolve) => setTimeout(resolve, 250));
+const completionDeadline = performance.now() + 5000;
+while (performance.now() < completionDeadline) {
+  if ((await readLog()).includes("hooks pi stop")) break;
+  await new Promise((resolve) => setTimeout(resolve, 10));
+}
 """
     completion = run_extension(
         bun=bun,
@@ -1499,6 +1528,11 @@ await handlers.get("agent_end")({
   messages: [{ role: "assistant", content: "done" }],
   stopReason: "completed"
 }, ctx);
+const completionDeadline = performance.now() + 5000;
+while (performance.now() < completionDeadline) {
+  if ((await Bun.file(logPath).text()).includes("hooks pi stop")) break;
+  await new Promise((resolve) => setTimeout(resolve, 10));
+}
 console.log(`ordered_completion_ms=${performance.now() - startedAt}`);
 """
     ordered = run_extension(
@@ -1605,6 +1639,11 @@ await handlers.get("agent_end")({
   messages: [{ role: "assistant", content: "done" }],
   stopReason: "completed"
 }, ctx);
+const completionDeadline = performance.now() + 6000;
+while (performance.now() < completionDeadline) {
+  if ((await Bun.file(logPath).text()).includes("hooks pi stop")) break;
+  await new Promise((resolve) => setTimeout(resolve, 10));
+}
 console.log(`completion_ms=${performance.now() - startedAt}`);
 """
     deadline = run_extension(
