@@ -1,0 +1,345 @@
+{
+  "sessions" : {
+    "pi-rpc-all-1" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-all-1:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484399.262027,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 85312,
+      "pidStartMicroseconds" : 892558,
+      "pidStartSeconds" : 1785484396,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-all-1",
+      "startedAt" : 1785484397.7738981,
+      "surfaceId" : "A86E4FEB-5636-4F03-A663-12A8BF67ED9B",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-all-1:turn-1"
+      ],
+      "updatedAt" : 1785484399.263813,
+      "workspaceId" : "38345A57-A311-4155-9312-E719DC747866"
+    },
+    "pi-rpc-all-2" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-all-2:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484404.686727,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 86377,
+      "pidStartMicroseconds" : 456784,
+      "pidStartSeconds" : 1785484402,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-all-2",
+      "startedAt" : 1785484403.3831801,
+      "surfaceId" : "A86E4FEB-5636-4F03-A663-12A8BF67ED9B",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-all-2:turn-1"
+      ],
+      "updatedAt" : 1785484404.693759,
+      "workspaceId" : "38345A57-A311-4155-9312-E719DC747866"
+    },
+    "pi-rpc-all-3" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-all-3:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484410.1939259,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 87513,
+      "pidStartMicroseconds" : 42413,
+      "pidStartSeconds" : 1785484408,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-all-3",
+      "startedAt" : 1785484408.915534,
+      "surfaceId" : "A86E4FEB-5636-4F03-A663-12A8BF67ED9B",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-all-3:turn-1"
+      ],
+      "updatedAt" : 1785484410.216179,
+      "workspaceId" : "38345A57-A311-4155-9312-E719DC747866"
+    },
+    "pi-rpc-all-4" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-all-4:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484416.022857,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 89053,
+      "pidStartMicroseconds" : 773601,
+      "pidStartSeconds" : 1785484413,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-all-4",
+      "startedAt" : 1785484414.693047,
+      "surfaceId" : "A86E4FEB-5636-4F03-A663-12A8BF67ED9B",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-all-4:turn-1"
+      ],
+      "updatedAt" : 1785484416.035923,
+      "workspaceId" : "38345A57-A311-4155-9312-E719DC747866"
+    },
+    "pi-rpc-all-5" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-all-5:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484422.0189161,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 90770,
+      "pidStartMicroseconds" : 441467,
+      "pidStartSeconds" : 1785484419,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-all-5",
+      "startedAt" : 1785484420.377388,
+      "surfaceId" : "A86E4FEB-5636-4F03-A663-12A8BF67ED9B",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-all-5:turn-1"
+      ],
+      "updatedAt" : 1785484422.0446858,
+      "workspaceId" : "38345A57-A311-4155-9312-E719DC747866"
+    },
+    "pi-rpc-cmux-only-1" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-cmux-only-1:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484396.610649,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 84798,
+      "pidStartMicroseconds" : 356194,
+      "pidStartSeconds" : 1785484394,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-cmux-only-1",
+      "startedAt" : 1785484346.314224,
+      "surfaceId" : "49C5EED7-99F5-4BDB-8FEC-A43C4D0E818A",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-cmux-only-1:turn-1"
+      ],
+      "updatedAt" : 1785484396.615264,
+      "workspaceId" : "0FBCB01F-BA9C-4FA7-9F2B-B4FDDAC5DA62"
+    },
+    "pi-rpc-cmux-only-2" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-cmux-only-2:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484402.031035,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 85877,
+      "pidStartMicroseconds" : 28792,
+      "pidStartSeconds" : 1785484400,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-cmux-only-2",
+      "startedAt" : 1785484400.87753,
+      "surfaceId" : "49C5EED7-99F5-4BDB-8FEC-A43C4D0E818A",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-cmux-only-2:turn-1"
+      ],
+      "updatedAt" : 1785484402.171926,
+      "workspaceId" : "0FBCB01F-BA9C-4FA7-9F2B-B4FDDAC5DA62"
+    },
+    "pi-rpc-cmux-only-3" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-cmux-only-3:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484407.735618,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 87056,
+      "pidStartMicroseconds" : 460032,
+      "pidStartSeconds" : 1785484405,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-cmux-only-3",
+      "startedAt" : 1785484406.313127,
+      "surfaceId" : "49C5EED7-99F5-4BDB-8FEC-A43C4D0E818A",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-cmux-only-3:turn-1"
+      ],
+      "updatedAt" : 1785484407.760376,
+      "workspaceId" : "0FBCB01F-BA9C-4FA7-9F2B-B4FDDAC5DA62"
+    },
+    "pi-rpc-cmux-only-4" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-cmux-only-4:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484413.254582,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 88311,
+      "pidStartMicroseconds" : 53334,
+      "pidStartSeconds" : 1785484411,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-cmux-only-4",
+      "startedAt" : 1785484411.929805,
+      "surfaceId" : "49C5EED7-99F5-4BDB-8FEC-A43C4D0E818A",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-cmux-only-4:turn-1"
+      ],
+      "updatedAt" : 1785484413.331924,
+      "workspaceId" : "0FBCB01F-BA9C-4FA7-9F2B-B4FDDAC5DA62"
+    },
+    "pi-rpc-cmux-only-5" : {
+      "agentLifecycle" : "idle",
+      "cwd" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag",
+      "lastBody" : "Task completed",
+      "lastNotificationStatus" : "idle",
+      "lastPromptTurnId" : "pi-rpc-cmux-only-5:turn-1",
+      "lastSubtitle" : "Completed",
+      "launchCommand" : {
+        "arguments" : [
+          "pi"
+        ],
+        "capturedAt" : 1785484419.1479092,
+        "environment" : {
+          "PI_OFFLINE" : "1",
+          "PI_SKIP_VERSION_CHECK" : "1"
+        },
+        "executablePath" : "pi",
+        "launcher" : "pi",
+        "source" : "process",
+        "workingDirectory" : "\/Users\/lawrence\/fun\/cmuxterm-hq\/worktrees\/feat-pi-extension-lag"
+      },
+      "pid" : 90025,
+      "pidStartMicroseconds" : 825483,
+      "pidStartSeconds" : 1785484416,
+      "runtimeStatus" : "idle",
+      "sessionId" : "pi-rpc-cmux-only-5",
+      "startedAt" : 1785484417.710339,
+      "surfaceId" : "49C5EED7-99F5-4BDB-8FEC-A43C4D0E818A",
+      "terminalPromptTurnIds" : [
+        "pi-rpc-cmux-only-5:turn-1"
+      ],
+      "updatedAt" : 1785484419.162751,
+      "workspaceId" : "0FBCB01F-BA9C-4FA7-9F2B-B4FDDAC5DA62"
+    }
+  },
+  "version" : 1
+}

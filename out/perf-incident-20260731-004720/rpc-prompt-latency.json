@@ -1,0 +1,157 @@
+{
+  "results": [
+    {
+      "label": "noext",
+      "iteration": 1,
+      "startup_ms": 490.712,
+      "prompt_accept_ms": 0.739,
+      "abort_ms": 17.403
+    },
+    {
+      "label": "cmux-only",
+      "iteration": 1,
+      "startup_ms": 998.151,
+      "prompt_accept_ms": 462.822,
+      "abort_ms": 1004.646
+    },
+    {
+      "label": "all",
+      "iteration": 1,
+      "startup_ms": 1024.989,
+      "prompt_accept_ms": 494.865,
+      "abort_ms": 1061.423,
+      "stderr": "Warning: No project session found with id 'pi-rpc-all-1'; creating a new session with that id."
+    },
+    {
+      "label": "noext",
+      "iteration": 2,
+      "startup_ms": 398.393,
+      "prompt_accept_ms": 2.287,
+      "abort_ms": 19.494,
+      "stderr": "Warning: No project session found with id 'pi-rpc-noext-2'; creating a new session with that id."
+    },
+    {
+      "label": "cmux-only",
+      "iteration": 2,
+      "startup_ms": 947.356,
+      "prompt_accept_ms": 459.769,
+      "abort_ms": 946.612,
+      "stderr": "Warning: No project session found with id 'pi-rpc-cmux-only-2'; creating a new session with that id."
+    },
+    {
+      "label": "all",
+      "iteration": 2,
+      "startup_ms": 1056.241,
+      "prompt_accept_ms": 459.276,
+      "abort_ms": 929.783,
+      "stderr": "Warning: No project session found with id 'pi-rpc-all-2'; creating a new session with that id."
+    },
+    {
+      "label": "noext",
+      "iteration": 3,
+      "startup_ms": 408.495,
+      "prompt_accept_ms": 0.538,
+      "abort_ms": 16.463,
+      "stderr": "Warning: No project session found with id 'pi-rpc-noext-3'; creating a new session with that id."
+    },
+    {
+      "label": "cmux-only",
+      "iteration": 3,
+      "startup_ms": 1005.067,
+      "prompt_accept_ms": 483.831,
+      "abort_ms": 1020.058,
+      "stderr": "Warning: No project session found with id 'pi-rpc-cmux-only-3'; creating a new session with that id."
+    },
+    {
+      "label": "all",
+      "iteration": 3,
+      "startup_ms": 1019.344,
+      "prompt_accept_ms": 500.575,
+      "abort_ms": 865.077,
+      "stderr": "Warning: No project session found with id 'pi-rpc-all-3'; creating a new session with that id."
+    },
+    {
+      "label": "noext",
+      "iteration": 4,
+      "startup_ms": 407.731,
+      "prompt_accept_ms": 0.568,
+      "abort_ms": 18.025,
+      "stderr": "Warning: No project session found with id 'pi-rpc-noext-4'; creating a new session with that id."
+    },
+    {
+      "label": "cmux-only",
+      "iteration": 4,
+      "startup_ms": 998.464,
+      "prompt_accept_ms": 471.264,
+      "abort_ms": 1017.403,
+      "stderr": "Warning: No project session found with id 'pi-rpc-cmux-only-4'; creating a new session with that id."
+    },
+    {
+      "label": "all",
+      "iteration": 4,
+      "startup_ms": 1092.102,
+      "prompt_accept_ms": 494.775,
+      "abort_ms": 884.14,
+      "stderr": "Warning: No project session found with id 'pi-rpc-all-4'; creating a new session with that id."
+    },
+    {
+      "label": "noext",
+      "iteration": 5,
+      "startup_ms": 429.012,
+      "prompt_accept_ms": 0.51,
+      "abort_ms": 16.521,
+      "stderr": "Warning: No project session found with id 'pi-rpc-noext-5'; creating a new session with that id."
+    },
+    {
+      "label": "cmux-only",
+      "iteration": 5,
+      "startup_ms": 1167.922,
+      "prompt_accept_ms": 467.368,
+      "abort_ms": 913.359,
+      "stderr": "Warning: No project session found with id 'pi-rpc-cmux-only-5'; creating a new session with that id."
+    },
+    {
+      "label": "all",
+      "iteration": 5,
+      "startup_ms": 1121.98,
+      "prompt_accept_ms": 470.882,
+      "abort_ms": 1219.572,
+      "stderr": "Warning: No project session found with id 'pi-rpc-all-5'; creating a new session with that id."
+    }
+  ],
+  "summary": {
+    "noext": {
+      "startup_ms_median": 408.495,
+      "startup_ms_min": 398.393,
+      "startup_ms_max": 490.712,
+      "prompt_accept_ms_median": 0.568,
+      "prompt_accept_ms_min": 0.51,
+      "prompt_accept_ms_max": 2.287,
+      "abort_ms_median": 17.403,
+      "abort_ms_min": 16.463,
+      "abort_ms_max": 19.494
+    },
+    "cmux-only": {
+      "startup_ms_median": 998.464,
+      "startup_ms_min": 947.356,
+      "startup_ms_max": 1167.922,
+      "prompt_accept_ms_median": 467.368,
+      "prompt_accept_ms_min": 459.769,
+      "prompt_accept_ms_max": 483.831,
+      "abort_ms_median": 1004.646,
+      "abort_ms_min": 913.359,
+      "abort_ms_max": 1020.058
+    },
+    "all": {
+      "startup_ms_median": 1056.241,
+      "startup_ms_min": 1019.344,
+      "startup_ms_max": 1121.98,
+      "prompt_accept_ms_median": 494.775,
+      "prompt_accept_ms_min": 459.276,
+      "prompt_accept_ms_max": 500.575,
+      "abort_ms_median": 929.783,
+      "abort_ms_min": 865.077,
+      "abort_ms_max": 1219.572
+    }
+  }
+}
