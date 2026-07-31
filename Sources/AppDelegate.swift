@@ -13015,6 +13015,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
         }
 
         let chars = KeyboardLayout.normalizedCharacters(for: event)
+#if DEBUG
+        // TEMPORARY bracket probe (feat-cmd-bracket-workspace-history diagnosis); remove before PR.
+        if chars == "[" || chars == "]" {
+            cmuxDebugLog(
+                "bracket.probe P1 enter chars=\(chars) keyCode=\(event.keyCode) " +
+                "flags=\(event.modifierFlags.intersection(.deviceIndependentFlagsMask).rawValue) " +
+                "charsIM=\(event.charactersIgnoringModifiers ?? "nil")"
+            )
+        }
+#endif
         let hasControl = flags.contains(.control)
         let hasCommand = flags.contains(.command)
         let hasOption = flags.contains(.option)
@@ -13974,6 +13984,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
             return true
         }
 
+#if DEBUG
+        // TEMPORARY bracket probe (feat-cmd-bracket-workspace-history diagnosis); remove before PR.
+        if chars == "[" || chars == "]" {
+            cmuxDebugLog(
+                "bracket.probe P2 reached directional/gotoSplit block " +
+                "gotoSplitPrev=\(ghosttyGotoSplitPreviousShortcut?.displayString ?? "nil") " +
+                "gotoSplitNext=\(ghosttyGotoSplitNextShortcut?.displayString ?? "nil")"
+            )
+        }
+#endif
         // Pane focus navigation (defaults to Cmd+Option+Arrow, but can be customized to letter/number keys).
         if matchConfiguredDirectionalShortcut(
             event: event,
@@ -14250,6 +14270,20 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
             }
         }
 
+#if DEBUG
+        // TEMPORARY bracket probe (feat-cmd-bracket-workspace-history diagnosis); remove before PR.
+        if chars == "[" || chars == "]" {
+            let probeManager = preferredMainWindowContextForShortcutRouting(event: event)?.tabManager ?? tabManager
+            cmuxDebugLog(
+                "bracket.probe P3 reached focusHistory branch " +
+                "matchBack=\(matchConfiguredShortcut(event: event, action: .focusHistoryBack)) " +
+                "matchFwd=\(matchConfiguredShortcut(event: event, action: .focusHistoryForward)) " +
+                "whenBack=\(shortcutWhenClauseAllows(action: .focusHistoryBack, event: event)) " +
+                "managerNil=\(probeManager == nil) canBack=\(probeManager?.canNavigateBack ?? false) " +
+                "canFwd=\(probeManager?.canNavigateForward ?? false)"
+            )
+        }
+#endif
         if matchConfiguredShortcut(event: event, action: .focusHistoryBack) {
             if performFocusedDockShortcut(.focusHistoryBack, event: event) { return true }
             let routedManager = preferredMainWindowContextForShortcutRouting(event: event)?.tabManager ?? tabManager
