@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "entries": [
+    {
+      "domain": "cmux",
+      "team": "cmux-dev",
+      "mode": "herdr-only",
+      "updated_at": "2026-08-03T15:54:48.842657+00:00",
+      "transitions": [
+        {
+          "from": "agmsg",
+          "to": "herdr-only",
+          "at": "2026-08-03T15:54:48.842657+00:00"
+        }
+      ]
+    }
+  ]
+}
